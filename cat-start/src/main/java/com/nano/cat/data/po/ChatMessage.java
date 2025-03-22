@@ -1,10 +1,4 @@
-package com.nano.cat.entity;
-
-/**
- * @author chenzeng
- * @version 0.0.1
- * @date 2025/3/20 00:09
- */
+package com.nano.cat.data.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -20,32 +14,29 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("user_profile")
-public class UserProfile {
+@TableName("chat_message")
+public class ChatMessage {
     @TableId(type = IdType.AUTO)
     private Long id;
 
-    @TableField("appleId")
-    private String appleId;
+    @TableField("userId")
+    private Long userId;
 
-    @TableField("nickname")
-    private String nickname;
+    @TableField("chatId")
+    private Long chatId;
 
-    private String avatar;
+    @TableField("sessionId")
+    private Long sessionId;
 
-    private String email;
+    @TableField("role")
+    private Integer role;
 
-    private Integer gender;
-
-    private String address;
-
-    @TableField("relationShipStatus")
-    private Integer relationShipStatus;
+    @TableField("content")
+    private String content;
 
     private Integer status;
 
     private Date dbctime;
 
     private Date dbutime;
-
 }

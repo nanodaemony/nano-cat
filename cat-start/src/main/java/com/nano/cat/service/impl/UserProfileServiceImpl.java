@@ -2,7 +2,7 @@ package com.nano.cat.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.nano.cat.entity.UserProfile;
+import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.mapper.UserProfileMapper;
 import com.nano.cat.service.UserProfileService;
 import java.util.Objects;
@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 public class UserProfileServiceImpl implements UserProfileService {
 
     private static final Logger log = LoggerFactory.getLogger(UserProfileServiceImpl.class);
+
     @Autowired
     private UserProfileMapper userProfileMapper;
 
@@ -63,7 +64,6 @@ public class UserProfileServiceImpl implements UserProfileService {
         wrapper.eq("id", userProfile.getId());
         wrapper.set("nickname", userProfile.getNickname());
         wrapper.set("avatar", userProfile.getAvatar());
-        wrapper.set("email", userProfile.getEmail());
         wrapper.set("gender", userProfile.getGender());
         wrapper.set("address", userProfile.getAddress());
         wrapper.set("relationShipStatus", userProfile.getRelationShipStatus());

@@ -17,8 +17,6 @@
 
     <modules>
         <module>cat-start</module>
-        <module>cat-service</module>
-        <module>cat-common</module>
     </modules>
 
     <dependencies>
@@ -200,23 +198,19 @@
             </dependency>
             <dependency>
                 <groupId>com.nano</groupId>
-                <artifactId>cat-start</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.nano</groupId>
-                <artifactId>cat-web</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.nano</groupId>
                 <artifactId>cat-service</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nano</groupId>
+                <artifactId>cat-start</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -234,7 +228,6 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.nano.cat.CatApplication</mainClass>
-                    <skip>true</skip>
                 </configuration>
                 <executions>
                     <execution>

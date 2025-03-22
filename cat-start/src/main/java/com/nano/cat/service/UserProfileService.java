@@ -1,7 +1,7 @@
 package com.nano.cat.service;
 
 
-import com.nano.cat.entity.UserProfile;
+import com.nano.cat.data.po.UserProfile;
 
 /**
  * @author chenzeng

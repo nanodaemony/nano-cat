@@ -1,7 +1,7 @@
 package com.nano.cat.web.logic;
 
 import cn.hutool.json.JSONUtil;
-import com.nano.cat.entity.UserProfile;
+import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.service.UserProfileService;
 import com.nano.cat.web.data.user.UserProfileVO;
 import com.nano.cat.web.data.user.UserRegisterRequest;
@@ -34,7 +34,7 @@ public class UserProfileLogic {
         UserProfile userProfile = userProfileService.getByAppleId(request.getAppleId());
         if (Objects.nonNull(userProfile)) {
             log.info("用户已存在, id: {}", userProfile.getId());
-            return null;
+            return buildUserProfileVO(userProfile);
         }
 
         long id = userProfileService.register(buildUserProfile(request));
