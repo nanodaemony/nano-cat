@@ -1,5 +1,6 @@
 package com.nano.cat.web.wrapper;
 
+import com.nano.cat.data.bo.QuestionnaireQuestionBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import com.nano.cat.web.data.questionnaire.QuestionnaireDetailResponse;
@@ -40,7 +41,7 @@ public class QuestionnaireWrapper {
     }
 
     public static QuestionnaireDetailResponse wrapQuestionnaireDetail(Questionnaire questionnaire,
-                                                                      List<QuestionnaireQuestion> questions) {
+                                                                      List<QuestionnaireQuestionBO> questions) {
         return null;
     }
 }

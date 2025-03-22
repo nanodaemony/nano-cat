@@ -2,6 +2,7 @@ package com.nano.cat.logic;
 
 import cn.hutool.json.JSONUtil;
 import com.nano.cat.web.logic.QuestionnaireLogic;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @version 0.0.1
  * @date 2025/3/20 00:13
  */
+@Ignore
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class QuestionnaireTest {

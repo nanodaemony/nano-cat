@@ -1,6 +1,8 @@
 package com.nano.cat.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nano.cat.data.bo.QuestionnaireQuestionBO;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import org.apache.ibatis.annotations.Mapper;
 

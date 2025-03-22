@@ -1,5 +1,6 @@
 package com.nano.cat.web.logic;
 
+import com.nano.cat.data.bo.QuestionnaireQuestionBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import com.nano.cat.service.QuestionnaireService;
@@ -53,7 +54,7 @@ public class QuestionnaireLogic extends BaseLogic {
         }
 
         // 查询问卷题目
-        List<QuestionnaireQuestion> questions = questionnaireService.getQuestions(id);
+        List<QuestionnaireQuestionBO> questions = questionnaireService.getQuestions(id);
         if (CollectionUtils.isEmpty(questions)) {
             logger.error("问卷题目不存在，问卷ID：{}", id);
             return new QuestionnaireDetailResponse();

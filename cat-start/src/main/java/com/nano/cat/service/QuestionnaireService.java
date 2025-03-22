@@ -1,5 +1,6 @@
 package com.nano.cat.service;
 
+import com.nano.cat.data.bo.QuestionnaireQuestionBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import java.util.List;
@@ -15,7 +16,7 @@ public interface QuestionnaireService {
 
     Questionnaire getQuestionnaireById(long id);
 
-    List<QuestionnaireQuestion> getQuestions(long questionnaireId);
+    List<QuestionnaireQuestionBO> getQuestions(long questionnaireId);
 
 
 }
