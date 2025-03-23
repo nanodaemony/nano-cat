@@ -8,6 +8,8 @@ import com.nano.cat.web.data.questionnaire.QuestionnaireMetaVO;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.nano.cat.web.data.questionnaire.QuestionnaireQuestionVO;
 import org.apache.commons.collections4.CollectionUtils;
 
 /**
@@ -42,6 +44,31 @@ public class QuestionnaireWrapper {
 
     public static QuestionnaireDetailResponse wrapQuestionnaireDetail(Questionnaire questionnaire,
                                                                       List<QuestionnaireQuestionBO> questions) {
-        return null;
+        QuestionnaireDetailResponse response = new QuestionnaireDetailResponse();
+        response.setQuestionnaire(wrapQuestionnaire(questionnaire));
+        response.setQuestions(wrapQuestions(questions));
+        return response;
+    }
+
+    private static List<QuestionnaireQuestionVO> wrapQuestions(List<QuestionnaireQuestionBO> questions) {
+        if (CollectionUtils.isEmpty(questions)) {
+            return new ArrayList<>();
+        }
+
+        return questions.stream()
+                        .map(QuestionnaireWrapper::wrapQuestion)
+                        .collect(Collectors.toList());
+    }
+
+    private static QuestionnaireQuestionVO wrapQuestion(QuestionnaireQuestionBO question) {
+        QuestionnaireQuestionVO vo = new QuestionnaireQuestionVO();
+        vo.setId(question.getId());
+        vo.setContent(question.getContent());
+        vo.setType(question.getType());
+        vo.setOptions(question.getOptions());
+        vo.setRequired(question.getRequired());
+        vo.setOrdinal(question.getOrdinal());
+
+        return vo;
     }
 }

@@ -2,6 +2,7 @@ package com.nano.cat.web.ctrl;
 
 import com.nano.cat.web.data.questionnaire.QuestionnaireDetailResponse;
 import com.nano.cat.web.data.questionnaire.QuestionnaireListResponse;
+import com.nano.cat.web.data.questionnaire.QuestionnaireSubmitRequest;
 import com.nano.cat.web.data.user.UserProfileVO;
 import com.nano.cat.web.data.user.UserRegisterRequest;
 import com.nano.cat.web.logic.QuestionnaireLogic;
@@ -37,5 +38,10 @@ public class QuestionnaireController {
         return questionnaireLogic.getQuestionnaireDetail(id);
     }
 
+    @Operation(description = "提交问卷")
+    @PostMapping("/submit")
+    public void submit(@RequestBody QuestionnaireSubmitRequest request) {
+        questionnaireLogic.submit(request);
+    }
 
 }
