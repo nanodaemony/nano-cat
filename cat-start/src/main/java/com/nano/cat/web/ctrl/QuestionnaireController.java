@@ -6,6 +6,7 @@ import com.nano.cat.web.data.questionnaire.QuestionnaireSubmitRequest;
 import com.nano.cat.web.data.user.UserProfileVO;
 import com.nano.cat.web.data.user.UserRegisterRequest;
 import com.nano.cat.web.logic.QuestionnaireLogic;
+import io.swagger.annotations.ApiParam;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ public class QuestionnaireController {
 
     @Operation(description = "获取问卷详情")
     @PostMapping("/detail")
-    public QuestionnaireDetailResponse detail(@RequestParam(value = "id", name = "问卷ID") long id) {
+    public QuestionnaireDetailResponse detail(@RequestParam(value = "id") @ApiParam(value = "问卷ID") long id) {
         return questionnaireLogic.getQuestionnaireDetail(id);
     }
 
