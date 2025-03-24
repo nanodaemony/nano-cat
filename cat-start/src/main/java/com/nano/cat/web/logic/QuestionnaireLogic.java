@@ -1,6 +1,7 @@
 package com.nano.cat.web.logic;
 
 import com.nano.cat.data.bo.QuestionnaireQuestionBO;
+import com.nano.cat.data.bo.UserQuestionnaireResultBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import com.nano.cat.service.QuestionnaireService;
@@ -10,9 +11,13 @@ import com.nano.cat.web.data.questionnaire.QuestionnaireListResponse;
 import com.nano.cat.web.data.questionnaire.QuestionnaireSubmitRequest;
 import com.nano.cat.web.wrapper.QuestionnaireWrapper;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -83,9 +88,61 @@ public class QuestionnaireLogic extends BaseLogic {
             return;
         }
 
-        // TODO: 查询用户作答历史结果
+        // 查询用户作答历史结果
+        List<UserQuestionnaireResultBO> results = questionnaireService.getQuestionResults(
+            request.getUserId(), request.getQuestionnaireId());
 
-        for (QuestionSubmitRequest questionRequest : request.getQuestions()) {
+        Map<Long, UserQuestionnaireResultBO> questionId2Result = results.stream()
+            .collect(Collectors.toMap(UserQuestionnaireResultBO::getQuestionId, Function.identity(), (v1, v2) -> v2));
+
+        // 按照题目结果是否存在分组
+        Map<Boolean, List<QuestionSubmitRequest>> exist2Questions = request.getQuestions().stream()
+            .collect(Collectors.partitioningBy(questionRequest -> questionId2Result.containsKey(questionRequest.getQuestionId())));
+
+        // 更新已存在的题目结果
+        updateQuestionResults(exist2Questions.get(Boolean.TRUE), questionId2Result);
+        // 新增不存在的题目结果
+        saveQuestionResults(exist2Questions.get(Boolean.FALSE), request.getUserId(), request.getQuestionnaireId());
+    }
+
+    private void updateQuestionResults(List<QuestionSubmitRequest> questionRequests,
+                                       Map<Long, UserQuestionnaireResultBO> questionId2Result) {
+        if (CollectionUtils.isEmpty(questionRequests)) {
+            return;
         }
+
+        for (QuestionSubmitRequest questionRequest : questionRequests) {
+            UserQuestionnaireResultBO result = questionId2Result.get(questionRequest.getQuestionId());
+            if (Objects.isNull(result)) {
+                continue;
+            }
+
+            result.setAnswers(questionRequest.getAnswers());
+            questionnaireService.updateQuestionResult(result);
+        }
+    }
+
+    private void saveQuestionResults(List<QuestionSubmitRequest> questionRequests, long userId, long questionnaireId) {
+        if (CollectionUtils.isEmpty(questionRequests)) {
+            return;
+        }
+        List<UserQuestionnaireResultBO> results = buildQuestionResults(questionRequests, userId, questionnaireId);
+        questionnaireService.batchInsertQuestionResults(results);
+    }
+
+    private List<UserQuestionnaireResultBO> buildQuestionResults(List<QuestionSubmitRequest> questionRequests,
+                                                                 long userId, long questionnaireId) {
+        if (CollectionUtils.isEmpty(questionRequests)) {
+            return new ArrayList<>();
+        }
+
+        return questionRequests.stream().map(questionRequest -> {
+            UserQuestionnaireResultBO result = new UserQuestionnaireResultBO();
+            result.setUserId(userId);
+            result.setQuestionnaireId(questionnaireId);
+            result.setQuestionId(questionRequest.getQuestionId());
+            result.setAnswers(questionRequest.getAnswers());
+            return result;
+        }).collect(Collectors.toList());
     }
 }

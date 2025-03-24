@@ -1,6 +1,7 @@
 package com.nano.cat.service;
 
 import com.nano.cat.data.bo.QuestionnaireQuestionBO;
+import com.nano.cat.data.bo.UserQuestionnaireResultBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import java.util.List;
@@ -18,5 +19,10 @@ public interface QuestionnaireService {
 
     List<QuestionnaireQuestionBO> getQuestions(long questionnaireId);
 
+    List<UserQuestionnaireResultBO> getQuestionResults(long userId, long questionnaireId);
+
+    void updateQuestionResult(UserQuestionnaireResultBO result);
+
+    void batchInsertQuestionResults(List<UserQuestionnaireResultBO> results);
 
 }
