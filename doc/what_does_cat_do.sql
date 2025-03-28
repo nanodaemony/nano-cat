@@ -26,6 +26,7 @@ CREATE TABLE `questionnaire`
     `subTitle`            VARCHAR(256) NOT NULL DEFAULT '' COMMENT '问卷副标题',
     `description`      TEXT         NOT NULL COMMENT '问卷描述',
     `questionnaireType` TINYINT(4)   NOT NULL DEFAULT '1' COMMENT '问卷类型 参考枚举 QuestionnaireTypeEnum',
+    `time`            INT(11)   NOT NULL DEFAULT '10' COMMENT '预估作答时间(单位分)',
     `coverImage`      VARCHAR(512) NOT NULL DEFAULT '' COMMENT '封面图',
     `ordinal` INT(4)   NOT NULL DEFAULT '100' COMMENT '排序, 大的排前面',
     `status`           TINYINT(4)   NOT NULL DEFAULT '1' COMMENT '问卷状态 0:不可用 1:可用',

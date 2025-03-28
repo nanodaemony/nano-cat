@@ -63,6 +63,21 @@ spring:
         min-idle: 10
       shutdown-timeout: 3s
 
+# multipart 配置
+spring.http.multipart:
+  max-file-size: 5MB       # multipart单个文件大小限制
+  max-request-size: 10MB   # multipart整个request的大小限制
+  file-size-threshold: 10MB # 大于fileSizeThreshold的在解析过程中会写磁盘, 否则是纯内存操作
+
+# 腾讯云 COS 配置
+tencent:
+  cos:
+    encKey: nanoCat
+    secretId: AVsspwOSoCuY03OSMAtJdsr/53nR29qvgzCjwMIaZgteCYIJ6loJ0CL9mN9z6hx4
+    secretKey: 20WyHWT0/A7B9q0R9+4xO/1+inlZ3Dgc+JsdQBbiqf/e66AVtMIkzfK3NV3gdwh8
+    region: ap-beijing
+    bucketName: nano-cat-1346329584
+
 # mybatis-plus配置
 mybatis-plus:
   # 启动时是否检查MyBatis XML文件是否存在

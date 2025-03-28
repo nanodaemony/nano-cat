@@ -38,6 +38,7 @@ public class QuestionnaireWrapper {
         vo.setDescription(questionnaire.getDescription());
         vo.setQuestionnaireType(questionnaire.getQuestionnaireType());
         vo.setCoverImage(questionnaire.getCoverImage());
+        vo.setTime(questionnaire.getTime());
 
         return vo;
     }

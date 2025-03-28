@@ -39,4 +39,7 @@ public class QuestionnaireMetaVO {
     @ApiModelProperty(value = "封面图片")
     private String coverImage;
 
+    @ApiModelProperty(value = "预估时间 单位min")
+    private int time;
+
 }

@@ -37,6 +37,8 @@ public class Questionnaire {
     @TableField("coverImage")
     private String coverImage;
 
+    private int time;
+
     private int ordinal;
 
     private Integer status;
