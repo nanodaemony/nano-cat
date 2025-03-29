@@ -11,6 +11,7 @@ import com.qcloud.cos.model.ObjectMetadata;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.model.PutObjectResult;
 import com.qcloud.cos.region.Region;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -79,9 +80,21 @@ public class OssServiceImpl implements OssService {
         }
 
         // 生成唯一的文件名并保留扩展名
-        String key = UUID.randomUUID().toString() + extension;
+        String key = UUID.randomUUID() + extension;
 
         // 创建元数据
+        PutObjectRequest putObjectRequest = getPutObjectRequest(fileBytes, extension, key);
+
+        // 上传文件
+        cosClient.putObject(putObjectRequest);
+
+        // 获取文件的URL
+        URL fileUrl = cosClient.getObjectUrl(bucketName, key);
+
+        return fileUrl.toString();
+    }
+
+    private @NotNull PutObjectRequest getPutObjectRequest(byte[] fileBytes, String extension, String key) {
         ObjectMetadata metadata = new ObjectMetadata();
         metadata.setContentLength(fileBytes.length);
 
@@ -99,13 +112,6 @@ public class OssServiceImpl implements OssService {
 
         // 创建上传请求
         PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, key, inputStream, metadata);
-
-        // 上传文件
-        cosClient.putObject(putObjectRequest);
-
-        // 获取文件的URL
-        URL fileUrl = cosClient.getObjectUrl(bucketName, key);
-
-        return fileUrl.toString();
+        return putObjectRequest;
     }
 }

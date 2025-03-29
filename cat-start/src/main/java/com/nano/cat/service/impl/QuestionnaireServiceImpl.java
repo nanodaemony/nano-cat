@@ -9,7 +9,7 @@ import com.nano.cat.data.bo.UserQuestionnaireResultBO;
 import com.nano.cat.data.po.Questionnaire;
 import com.nano.cat.data.po.QuestionnaireQuestion;
 import com.nano.cat.data.po.UserQuestionnaireResult;
-import com.nano.cat.enums.StatusEnum;
+import com.nano.common.enums.StatusEnum;
 import com.nano.cat.mapper.QuestionnaireMapper;
 import com.nano.cat.mapper.QuestionnaireQuestionMapper;
 import com.nano.cat.mapper.UserQuestionnaireResultMapper;

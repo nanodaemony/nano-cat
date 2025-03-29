@@ -1,4 +1,4 @@
-package com.nano.cat.data.constants;
+package com.nano.cat.constants;
 
 /**
  * @author chenzeng
