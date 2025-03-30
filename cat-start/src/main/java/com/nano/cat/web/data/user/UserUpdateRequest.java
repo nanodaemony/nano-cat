@@ -35,6 +35,12 @@ public class UserUpdateRequest {
     @ApiModelProperty(value = "地址")
     private String address;
 
+    @ApiModelProperty(value = "出生地址")
+    private String birthPlace;
+
+    @ApiModelProperty(value = "出生时间 精确到小时 对应的时间戳")
+    private long birthTime;
+
     @ApiModelProperty(value = "关系状态")
     private int relationShipStatus;
 

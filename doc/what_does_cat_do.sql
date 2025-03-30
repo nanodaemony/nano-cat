@@ -4,12 +4,16 @@ CREATE TABLE `user_profile`
     `id`           BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '用户ID',
 
     `appleId`         VARCHAR(256) NOT NULL DEFAULT ''     COMMENT '苹果ID',
+    `username`         VARCHAR(256) NOT NULL DEFAULT ''     COMMENT '用户名称(苹果的名称, 固定值)',
+    `email`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '邮箱',
+
     `nickname`         VARCHAR(64) NOT NULL DEFAULT ''     COMMENT '昵称',
     `phone`         VARCHAR(64) NOT NULL DEFAULT ''     COMMENT '电话',
-    `avatar`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '头像',
-    `email`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '邮箱',
+    `avatar`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '头像URL',
     `gender`       INT(11) NOT NULL DEFAULT '0'     COMMENT '性别 0-未知 1-男 2-女',
+    `birthTime`       BIGINT(20) NOT NULL DEFAULT '0'     COMMENT '出生时间(可以精确到毫秒)',
     `address`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '地址',
+    `birthPlace`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '出生地址',
     `relationShipStatus`       INT(11) NOT NULL DEFAULT '0'     COMMENT '感情状态 参考RelationshipStatusEnum',
 
     `status`       TINYINT(4)   NOT NULL DEFAULT '1'    COMMENT '0:不可用 1:可用',

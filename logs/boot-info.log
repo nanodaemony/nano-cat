@@ -1,26 +1,146 @@
-2025-03-29 13:50:19.959 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
-2025-03-29 13:50:19.962 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 34035 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
-2025-03-29 13:50:19.964 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
-2025-03-29 13:50:21.498 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 13:50:21.501 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-03-29 13:50:21.539 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
-2025-03-29 13:50:21.565 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 13:50:21.566 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-03-29 13:50:21.584 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2025-03-29 13:50:22.661 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
-2025-03-29 13:50:22.672 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-29 13:50:22.672 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
-2025-03-29 13:50:22.672 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2025-03-29 13:50:22.918 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
-2025-03-29 13:50:22.920 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 2845 ms
-2025-03-29 13:50:25.702 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
-2025-03-29 13:50:25.851 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
-2025-03-29 13:50:26.152 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
-2025-03-29 13:50:26.180 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
-2025-03-29 13:50:26.207 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 7.011 seconds (JVM running for 7.578)
-2025-03-29 13:59:44.942 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
-2025-03-29 13:59:44.972 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
-2025-03-29 13:59:44.976 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+2025-03-30 20:05:19.012 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 10963 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
+2025-03-30 20:05:19.012 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-03-30 20:05:19.016 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-03-30 20:05:20.441 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-30 20:05:20.444 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-30 20:05:20.494 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+2025-03-30 20:05:20.529 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-30 20:05:20.531 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-30 20:05:20.553 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-03-30 20:05:21.788 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-03-30 20:05:21.800 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-30 20:05:21.801 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-03-30 20:05:21.801 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-03-30 20:05:22.226 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-03-30 20:05:22.230 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 3118 ms
+2025-03-30 20:05:25.250 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-03-30 20:05:26.360ERROR [main] com.zaxxer.hikari.pool.HikariPool       :594 [][] HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1361)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 88 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 91 common frames omitted
+
+2025-03-30 20:05:26.372 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-03-30 20:05:26.413 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
 Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
 Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
 Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
@@ -38,130 +158,201 @@ Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Met
 Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
 Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
 Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
-Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
-Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
-Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
-Class: java.lang.Iterable, Method: forEach, Line: 75
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
-Class: java.lang.Thread, Method: run, Line: 748
-2025-03-29 14:09:53.766 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
-2025-03-29 14:09:53.768 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 37223 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
-2025-03-29 14:09:53.770 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
-2025-03-29 14:09:55.115 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 14:09:55.118 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-03-29 14:09:55.153 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
-2025-03-29 14:09:55.178 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 14:09:55.179 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-03-29 14:09:55.195 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2025-03-29 14:09:56.293 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
-2025-03-29 14:09:56.307 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-29 14:09:56.307 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
-2025-03-29 14:09:56.307 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2025-03-29 14:09:56.600 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
-2025-03-29 14:09:56.602 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 2747 ms
-2025-03-29 14:09:59.618 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
-2025-03-29 14:09:59.792 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
-2025-03-29 14:10:00.166 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
-2025-03-29 14:10:00.203 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
-2025-03-29 14:10:00.236 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 7.163 seconds (JVM running for 7.764)
-2025-03-29 14:10:04.201 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
-2025-03-29 14:10:04.222 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
-2025-03-29 14:10:04.225 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
-Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
-Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
-Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
-Class: sun.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
-Class: sun.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
-Class: sun.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
-Class: java.lang.reflect.Method, Method: invoke, Line: 498
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
-Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
-Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
-Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
-Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
-Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
-Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
-Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
-Class: java.lang.Iterable, Method: forEach, Line: 75
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
-Class: java.lang.Thread, Method: run, Line: 748
-2025-03-29 14:13:05.155 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
-2025-03-29 14:13:05.154 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 38100 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
-2025-03-29 14:13:05.159 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
-2025-03-29 14:13:06.670 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 14:13:06.673 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-03-29 14:13:06.714 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
-2025-03-29 14:13:06.741 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 14:13:06.742 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-03-29 14:13:06.761 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2025-03-29 14:13:08.046 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
-2025-03-29 14:13:08.060 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-29 14:13:08.061 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
-2025-03-29 14:13:08.061 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2025-03-29 14:13:08.349 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
-2025-03-29 14:13:08.351 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 3104 ms
-2025-03-29 14:13:11.332 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
-2025-03-29 14:13:11.523 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
-2025-03-29 14:13:11.966 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
-2025-03-29 14:13:12.005 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
-2025-03-29 14:13:12.027 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 7.622 seconds (JVM running for 8.229)
-2025-03-29 14:13:15.387 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
-2025-03-29 14:13:15.425 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
-2025-03-29 14:13:15.427 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
-Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
-Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
-Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
-Class: sun.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
-Class: sun.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
-Class: sun.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
-Class: java.lang.reflect.Method, Method: invoke, Line: 498
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
-Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
-Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
-Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
-Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
-Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
-Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
-Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
-Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
-Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
-Class: java.lang.Iterable, Method: forEach, Line: 75
-Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
-Class: java.lang.Thread, Method: run, Line: 748
-2025-03-29 16:58:18.079 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 66398 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
-2025-03-29 16:58:18.081 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
-2025-03-29 16:58:18.084 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
-2025-03-29 16:58:19.555 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 16:58:19.559 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2025-03-29 16:58:19.594 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
-2025-03-29 16:58:19.626 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
-2025-03-29 16:58:19.627 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-03-29 16:58:19.646 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2025-03-29 16:58:20.737 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
-2025-03-29 16:58:20.750 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-29 16:58:20.750 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
-2025-03-29 16:58:20.750 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2025-03-29 16:58:21.020 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
-2025-03-29 16:58:21.022 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 2829 ms
-2025-03-29 16:58:24.041 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
-2025-03-29 16:58:24.239 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
-2025-03-29 16:58:24.734 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
-2025-03-29 16:58:24.777 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
-2025-03-29 16:58:24.803 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 7.497 seconds (JVM running for 8.197)
-2025-03-29 16:58:26.538 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
-2025-03-29 16:58:26.562 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
-2025-03-29 16:58:26.565 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-03-30 20:05:26.428 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-03-30 20:05:26.469 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-30 20:05:26.487ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcMappingContext' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCustomConversions' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.jdbc.core.convert.JdbcCustomConversions]: Factory method 'jdbcCustomConversions' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:233)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:494)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:342)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1172)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcCustomConversions(AbstractJdbcConfiguration.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 55 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:83)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:108)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:78)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1361)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:80)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	... 75 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 88 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 91 common frames omitted
+
+2025-03-30 20:06:38.142 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 1.8.0_291 on nano-2.local with PID 11572 (/Users/nano/nano/cat/cat-start/target/classes started by nano in /Users/nano/nano/cat)
+2025-03-30 20:06:38.144 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-03-30 20:06:38.144 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-03-30 20:06:39.539 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-30 20:06:39.542 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-30 20:06:39.580 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 33 ms. Found 0 JDBC repository interfaces.
+2025-03-30 20:06:39.603 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-30 20:06:39.604 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-30 20:06:39.622 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-03-30 20:06:40.818 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-03-30 20:06:40.834 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-30 20:06:40.834 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-03-30 20:06:40.834 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-03-30 20:06:41.129 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-03-30 20:06:41.133 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 2899 ms
+2025-03-30 20:06:43.881 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-03-30 20:06:44.055 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-03-30 20:06:44.491 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-03-30 20:06:44.520 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-03-30 20:06:44.548 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 7.154 seconds (JVM running for 7.821)
+2025-03-30 20:08:26.263 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30 20:08:26.264 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-03-30 20:08:26.272 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 7 ms
+2025-03-30 20:08:27.330 INFO [http-nio-8080-exec-22] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 592 ms
+2025-03-30 20:08:50.456 INFO [http-nio-8080-exec-38] com.nano.cat.web.logic.UserProfileLogic :30 [][] 用户注册请求: {"appleId":"123454","email":"1183429@qq.com","username":"jack"}
+2025-03-30 20:08:50.664 INFO [http-nio-8080-exec-38] c.n.c.s.impl.UserProfileServiceImpl     :54 [][] 用户注册成功, id: 1
+2025-03-30 20:08:50.664 INFO [http-nio-8080-exec-38] com.nano.cat.web.logic.UserProfileLogic :42 [][] 用户注册成功, id: 1
+2025-03-30 20:09:36.882 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-03-30 20:09:36.892 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-03-30 20:09:36.897 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
 Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
 Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
 Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64

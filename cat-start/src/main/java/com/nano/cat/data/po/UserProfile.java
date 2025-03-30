@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -28,6 +29,9 @@ public class UserProfile {
     @TableField("appleId")
     private String appleId;
 
+    @TableField("username")
+    private String username;
+
     @TableField("nickname")
     private String nickname;
 
@@ -38,6 +42,14 @@ public class UserProfile {
     private Integer gender;
 
     private String address;
+
+    // 出生地址
+    @TableField("birthPlace")
+    private String birthPlace;
+
+    // 出生时间 精确到小时 对应的时间戳
+    @TableField("birthTime")
+    private long birthTime;
 
     @TableField("relationShipStatus")
     private Integer relationShipStatus;

@@ -23,7 +23,7 @@ public class UserRegisterRequest {
     @ApiModelProperty(value = "邮箱")
     private String email;
 
-    @ApiModelProperty(value = "电话")
-    private String phone;
+    @ApiModelProperty(value = "用户名称")
+    private String username;
 
 }

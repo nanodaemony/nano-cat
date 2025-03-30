@@ -35,7 +35,7 @@ public class UserController {
     @ApiOperation(value = "获取用户信息")
     @GetMapping("/detail")
     public UserProfileVO getUserInfo(@RequestParam(value = "userId", defaultValue = "0") long userId) {
-        return userProfileLogic.getUserInfo(userId);
+        return userProfileLogic.getExistUser(userId);
     }
 
     @ApiOperation(value = "更新用户信息")

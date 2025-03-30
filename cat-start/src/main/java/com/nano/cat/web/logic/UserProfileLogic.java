@@ -34,7 +34,7 @@ public class UserProfileLogic {
         UserProfile userProfile = userProfileService.getByAppleId(request.getAppleId());
         if (Objects.nonNull(userProfile)) {
             log.info("用户已存在, id: {}", userProfile.getId());
-            return buildUserProfileVO(userProfile);
+            return getExistUser(userProfile.getId());
         }
 
         long id = userProfileService.register(buildUserProfile(request));
@@ -42,14 +42,14 @@ public class UserProfileLogic {
             log.info("用户注册成功, id: {}", id);
         }
 
-        return getUserInfo(id);
+        return getNewRegisterUser(id);
     }
 
     private UserProfile buildUserProfile(UserRegisterRequest request) {
         return UserProfile.builder()
                           .appleId(request.getAppleId())
-                          .nickname(request.getEmail())
-                          .avatar(request.getPhone())
+                          .email(request.getEmail())
+                          .username(request.getUsername())
                           .build();
     }
 
@@ -75,7 +75,7 @@ public class UserProfileLogic {
         int row = userProfileService.update(buildUserUpdateProfile(request));
         log.info("用户更新成功, id: {}, row: {}", userProfile.getId(), row);
 
-        return getUserInfo(userProfile.getId());
+        return getExistUser(userProfile.getId());
     }
 
     private UserProfile buildUserUpdateProfile(UserUpdateRequest request) {
@@ -86,6 +86,8 @@ public class UserProfileLogic {
         userProfile.setGender(request.getGender());
         userProfile.setAddress(request.getAddress());
         userProfile.setRelationShipStatus(request.getRelationShipStatus());
+        userProfile.setBirthPlace(request.getBirthPlace());
+        userProfile.setBirthTime(request.getBirthTime());
 
         return userProfile;
     }
@@ -98,18 +100,28 @@ public class UserProfileLogic {
         }
     }
 
-    public UserProfileVO getUserInfo(long userId) {
+    private UserProfileVO getNewRegisterUser(long userId) {
+        return getUserInfo(userId, true);
+    }
+
+    public UserProfileVO getExistUser(long userId) {
+        return getUserInfo(userId, false);
+    }
+
+    public UserProfileVO getUserInfo(long userId, boolean newRegister) {
         if (userId <= 0) {
             throw new IllegalArgumentException("Invalid userId.");
         }
 
         UserProfile userProfile = userProfileService.getByUserId(userId);
-        return buildUserProfileVO(userProfile);
+        return buildUserProfileVO(newRegister, userProfile);
     }
 
-    private UserProfileVO buildUserProfileVO(UserProfile userProfile) {
+    private UserProfileVO buildUserProfileVO(boolean newRegister, UserProfile userProfile) {
         UserProfileVO vo = new UserProfileVO();
+        vo.setNewRegister(newRegister);
         vo.setUserId(userProfile.getId());
+        vo.setAppleId(userProfile.getAppleId());
         vo.setNickname(userProfile.getNickname());
         vo.setAvatar(userProfile.getAvatar());
         vo.setEmail(userProfile.getEmail());
