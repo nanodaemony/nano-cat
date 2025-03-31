@@ -26,6 +26,12 @@ public class UserProfileLogic {
     @Autowired
     private UserProfileService userProfileService;
 
+    /**
+     * 用户注册
+     *
+     * @param request 注册请求
+     * @return 用户信息
+     */
     public UserProfileVO register(UserRegisterRequest request) {
         log.info("用户注册请求: {}", JSONUtil.toJsonStr(request));
         verifyRequest(request);
@@ -34,7 +40,7 @@ public class UserProfileLogic {
         UserProfile userProfile = userProfileService.getByAppleId(request.getAppleId());
         if (Objects.nonNull(userProfile)) {
             log.info("用户已存在, id: {}", userProfile.getId());
-            return getExistUser(userProfile.getId());
+            return getUserInfo(userProfile.getId());
         }
 
         long id = userProfileService.register(buildUserProfile(request));
@@ -42,7 +48,7 @@ public class UserProfileLogic {
             log.info("用户注册成功, id: {}", id);
         }
 
-        return getNewRegisterUser(id);
+        return getUserInfo(id);
     }
 
     private UserProfile buildUserProfile(UserRegisterRequest request) {
@@ -55,13 +61,15 @@ public class UserProfileLogic {
 
     private void verifyRequest(UserRegisterRequest request) {
         boolean invalid = Objects.isNull(request)
-            || StringUtils.isBlank(request.getAppleId())
-            || StringUtils.isBlank(request.getEmail());
+            || StringUtils.isBlank(request.getAppleId());
         if (invalid) {
             throw new IllegalArgumentException("Invalid request.");
         }
     }
 
+    /**
+     * 更新用户信息
+     */
     public UserProfileVO update(UserUpdateRequest request) {
         log.info("用户更新请求: {}", JSONUtil.toJsonStr(request));
         verifyRequest(request);
@@ -75,7 +83,7 @@ public class UserProfileLogic {
         int row = userProfileService.update(buildUserUpdateProfile(request));
         log.info("用户更新成功, id: {}, row: {}", userProfile.getId(), row);
 
-        return getExistUser(userProfile.getId());
+        return getUserInfo(userProfile.getId());
     }
 
     private UserProfile buildUserUpdateProfile(UserUpdateRequest request) {
@@ -100,26 +108,17 @@ public class UserProfileLogic {
         }
     }
 
-    private UserProfileVO getNewRegisterUser(long userId) {
-        return getUserInfo(userId, true);
-    }
-
-    public UserProfileVO getExistUser(long userId) {
-        return getUserInfo(userId, false);
-    }
-
-    public UserProfileVO getUserInfo(long userId, boolean newRegister) {
+    public UserProfileVO getUserInfo(long userId) {
         if (userId <= 0) {
             throw new IllegalArgumentException("Invalid userId.");
         }
 
         UserProfile userProfile = userProfileService.getByUserId(userId);
-        return buildUserProfileVO(newRegister, userProfile);
+        return buildUserProfileVO(userProfile);
     }
 
-    private UserProfileVO buildUserProfileVO(boolean newRegister, UserProfile userProfile) {
+    private UserProfileVO buildUserProfileVO(UserProfile userProfile) {
         UserProfileVO vo = new UserProfileVO();
-        vo.setNewRegister(newRegister);
         vo.setUserId(userProfile.getId());
         vo.setAppleId(userProfile.getAppleId());
         vo.setNickname(userProfile.getNickname());

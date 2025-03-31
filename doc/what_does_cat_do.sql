@@ -22,6 +22,32 @@ CREATE TABLE `user_profile`
     PRIMARY KEY    (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
 
+# 用户权益表
+CREATE TABLE `user_right` (
+    `id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '权益ID',
+    `userId` BIGINT(20) UNSIGNED NOT NULL COMMENT '用户ID',
+    `transactionId` VARCHAR(128) NOT NULL DEFAULT '' COMMENT '交易ID',
+
+    `type` INT(11) NOT NULL COMMENT '权益类型 1-包月订阅 2-连续包月订阅',
+    `name` VARCHAR(64) NOT NULL DEFAULT '' COMMENT '权益名称',
+    `paymentTime` DATETIME(3) COMMENT '付费时间',
+    `paymentAmount` DECIMAL(10,2) NOT NULL DEFAULT '0.00' COMMENT '付费金额',
+    `paymentMethod` VARCHAR(32) NOT NULL DEFAULT '' COMMENT '支付方式',
+
+    `startTime` DATETIME(3) NOT NULL COMMENT '权益开始时间',
+    `expireTime` DATETIME(3) NOT NULL COMMENT '权益到期时间',
+    `autoRenew` TINYINT(4) NOT NULL DEFAULT '0' COMMENT '是否自动续费 0-否 1-是',
+    `remark` VARCHAR(512) NOT NULL DEFAULT '' COMMENT '备注',
+
+    `status` TINYINT(4) NOT NULL DEFAULT '1' COMMENT '状态 0-已过期 1-生效中 2-已取消 3-退款中 4-已退款',
+    `dbctime` DATETIME(3) DEFAULT CURRENT_TIMESTAMP(3) COMMENT '创建时间',
+    `dbutime` DATETIME(3) DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3) COMMENT '更新时间',
+
+    PRIMARY KEY (`id`),
+    INDEX `idx_user_id` (`user_id`),
+    INDEX `idx_transaction_id` (`transaction_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户权益表';
+
 # 问卷基本信息表
 CREATE TABLE `questionnaire`
 (

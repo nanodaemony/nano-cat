@@ -23,9 +23,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserProfileVO {
 
-    @ApiModelProperty(value = "是否新注册")
-    private boolean newRegister;
-
     @ApiModelProperty(value = "苹果ID")
     private String appleId;
 
