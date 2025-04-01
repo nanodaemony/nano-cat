@@ -80,23 +80,21 @@ public class UserProfileLogic {
             return null;
         }
 
-        int row = userProfileService.update(buildUserUpdateProfile(request));
+        int row = userProfileService.update(buildUserUpdateProfile(userProfile, request));
         log.info("用户更新成功, id: {}, row: {}", userProfile.getId(), row);
 
         return getUserInfo(userProfile.getId());
     }
 
-    private UserProfile buildUserUpdateProfile(UserUpdateRequest request) {
-        UserProfile userProfile = new UserProfile();
+    private UserProfile buildUserUpdateProfile(UserProfile userProfile, UserUpdateRequest request) {
         userProfile.setId(request.getUserId());
-        userProfile.setNickname(request.getNickname());
-        userProfile.setAvatar(request.getAvatar());
-        userProfile.setGender(request.getGender());
-        userProfile.setAddress(request.getAddress());
-        userProfile.setRelationShipStatus(request.getRelationShipStatus());
-        userProfile.setBirthPlace(request.getBirthPlace());
-        userProfile.setBirthTime(request.getBirthTime());
-
+        userProfile.setNickname(StringUtils.isNotBlank(request.getNickname()) ? request.getNickname() : userProfile.getNickname());
+        userProfile.setAvatar(StringUtils.isNotBlank(request.getAvatar()) ? request.getAvatar() : userProfile.getAvatar());
+        userProfile.setGender(request.getGender() > 0 ? request.getGender() : userProfile.getGender());
+        userProfile.setAddress(StringUtils.isNotBlank(request.getAddress()) ? request.getAddress() : userProfile.getAddress());
+        userProfile.setRelationShipStatus(request.getRelationShipStatus() > 0 ? request.getRelationShipStatus() : userProfile.getRelationShipStatus());
+        userProfile.setBirthPlace(StringUtils.isNotBlank(request.getBirthPlace()) ? request.getBirthPlace() : userProfile.getBirthPlace());
+        userProfile.setBirthTime(request.getBirthTime() > 0 ? request.getBirthTime() : userProfile.getBirthTime());
         return userProfile;
     }
 
@@ -114,6 +112,11 @@ public class UserProfileLogic {
         }
 
         UserProfile userProfile = userProfileService.getByUserId(userId);
+        if (Objects.isNull(userProfile)) {
+            log.info("用户不存在. userId: {}", userId);
+            return null;
+        }
+
         return buildUserProfileVO(userProfile);
     }
 
@@ -121,11 +124,13 @@ public class UserProfileLogic {
         UserProfileVO vo = new UserProfileVO();
         vo.setUserId(userProfile.getId());
         vo.setAppleId(userProfile.getAppleId());
-        vo.setNickname(userProfile.getNickname());
-        vo.setAvatar(userProfile.getAvatar());
-        vo.setEmail(userProfile.getEmail());
+        vo.setNickname(StringUtils.isNotBlank(userProfile.getNickname()) ? userProfile.getNickname() : null);
+        vo.setAvatar(StringUtils.isNotBlank(userProfile.getAvatar()) ? userProfile.getAvatar() : null);
+        vo.setEmail(StringUtils.isNotBlank(userProfile.getEmail()) ? userProfile.getEmail() : null);
         vo.setGender(userProfile.getGender());
-        vo.setAddress(userProfile.getAddress());
+        vo.setAddress(StringUtils.isNotBlank(userProfile.getAddress()) ? userProfile.getAddress() : null);
+        vo.setBirthPlace(StringUtils.isNotBlank(userProfile.getBirthPlace()) ? userProfile.getBirthPlace() : null);
+        vo.setBirthTime(userProfile.getBirthTime());
         vo.setRelationShipStatus(userProfile.getRelationShipStatus());
         return vo;
     }

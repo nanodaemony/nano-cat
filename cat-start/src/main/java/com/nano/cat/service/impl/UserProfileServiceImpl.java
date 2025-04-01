@@ -60,15 +60,8 @@ public class UserProfileServiceImpl implements UserProfileService {
         if (Objects.isNull(userProfile) || userProfile.getId() < 0) {
             return 0;
         }
-        UpdateWrapper<UserProfile> wrapper = new UpdateWrapper<>();
-        wrapper.eq("id", userProfile.getId());
-        wrapper.set("nickname", userProfile.getNickname());
-        wrapper.set("avatar", userProfile.getAvatar());
-        wrapper.set("gender", userProfile.getGender());
-        wrapper.set("address", userProfile.getAddress());
-        wrapper.set("relationShipStatus", userProfile.getRelationShipStatus());
 
-        int update = userProfileMapper.update(userProfile, wrapper);
+        int update = userProfileMapper.updateById(userProfile);
         log.info("用户信息更新成功, id: {}", userProfile.getId());
         return update;
     }

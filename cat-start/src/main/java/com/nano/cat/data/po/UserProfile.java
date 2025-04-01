@@ -49,7 +49,7 @@ public class UserProfile {
 
     // 出生时间 精确到小时 对应的时间戳
     @TableField("birthTime")
-    private long birthTime;
+    private Long birthTime;
 
     @TableField("relationShipStatus")
     private Integer relationShipStatus;

@@ -11,6 +11,7 @@ public class CatApplication {
         SpringApplication.run(CatApplication.class, args);
         IdUtils.genId();
         System.out.println("Swagger: " + "https://elegantfish.online/api/doc.html#/home");
+        System.out.println("Swagger: " + "http://localhost:8080/api/doc.html#/home");
     }
 
 }

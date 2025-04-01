@@ -36,4 +36,5 @@ public class Chat {
     private Date dbctime;
 
     private Date dbutime;
+
 }

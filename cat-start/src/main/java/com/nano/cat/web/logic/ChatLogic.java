@@ -46,6 +46,10 @@ public class ChatLogic extends BaseLogic {
 
         // 拉取用户问卷记录
 
+        // 构造预测请求
+
+        // 进行预测
+
 
         return null;
     }
