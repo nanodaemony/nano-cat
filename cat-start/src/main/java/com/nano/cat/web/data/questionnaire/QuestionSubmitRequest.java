@@ -1,6 +1,7 @@
 package com.nano.cat.web.data.questionnaire;
 
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,10 +20,10 @@ import java.util.List;
 @NoArgsConstructor
 public class QuestionSubmitRequest {
 
-    @ApiModelProperty(value = "题目ID")
+    @Schema(description = "题目ID")
     private long questionId;
 
-    @ApiModelProperty(value = "作答结果列表")
+    @Schema(description = "作答结果列表")
     private List<String> answers;
 
 }

@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,25 +22,25 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class QuestionnaireMetaVO {
 
-    @ApiModelProperty(value = "问卷ID")
+    @Schema(description = "问卷ID")
     private long id;
 
-    @ApiModelProperty(value = "问卷标题")
+    @Schema(description = "问卷标题")
     private String title;
 
-    @ApiModelProperty(value = "问卷副标题")
+    @Schema(description = "问卷副标题")
     private String subTitle;
 
-    @ApiModelProperty(value = "问卷描述")
+    @Schema(description = "问卷描述")
     private String description;
 
-    @ApiModelProperty(value = "问卷类型")
+    @Schema(description = "问卷类型")
     private int questionnaireType;
 
-    @ApiModelProperty(value = "封面图片")
+    @Schema(description = "封面图片")
     private String coverImage;
 
-    @ApiModelProperty(value = "预估时间 单位min")
+    @Schema(description = "预估时间 单位min")
     private int time;
 
 }

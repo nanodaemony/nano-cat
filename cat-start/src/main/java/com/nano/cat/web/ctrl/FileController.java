@@ -29,6 +29,7 @@ public class FileController {
      * @param file 上传的文件
      * @return 文件在COS上的URL
      */
+    @Operation(summary = "上传文件")
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
         return fileLogic.uploadFile(file);

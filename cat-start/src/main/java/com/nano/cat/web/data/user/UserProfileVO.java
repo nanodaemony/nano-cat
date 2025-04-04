@@ -12,6 +12,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,37 +25,37 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserProfileVO {
 
-    @ApiModelProperty(value = "苹果ID")
+    @Schema(description = "苹果ID")
     private String appleId;
 
-    @ApiModelProperty(value = "用户ID")
+    @Schema(description = "用户ID")
     private long userId;
 
-    @ApiModelProperty(value = "昵称")
+    @Schema(description = "昵称")
     private String nickname;
 
-    @ApiModelProperty(value = "头像")
+    @Schema(description = "头像")
     private String avatar;
 
-    @ApiModelProperty(value = "邮箱")
+    @Schema(description = "邮箱")
     private String email;
 
-    @ApiModelProperty(value = "性别")
+    @Schema(description = "性别")
     private int gender;
 
-    @ApiModelProperty(value = "地址")
+    @Schema(description = "地址")
     private String address;
 
-    @ApiModelProperty(value = "出生地址")
+    @Schema(description = "出生地址")
     private String birthPlace;
 
-    @ApiModelProperty(value = "出生时间 精确到小时 对应的时间戳")
+    @Schema(description = "出生时间 精确到小时 对应的时间戳")
     private long birthTime;
 
-    @ApiModelProperty(value = "情感状态")
+    @Schema(description = "情感状态")
     private int relationShipStatus;
 
-    @ApiModelProperty(value = "用户权益信息")
+    @Schema(description = "用户权益信息")
     private UserRightVO userRight;
 
 }

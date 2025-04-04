@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,28 +21,28 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserUpdateRequest {
 
-    @ApiModelProperty(value = "用户ID")
+    @Schema(description = "用户ID")
     private long userId;
 
-    @ApiModelProperty(value = "昵称")
+    @Schema(description = "昵称")
     private String nickname;
 
-    @ApiModelProperty(value = "头像")
+    @Schema(description = "头像")
     private String avatar;
 
-    @ApiModelProperty(value = "性别")
+    @Schema(description = "性别")
     private Integer gender;
 
-    @ApiModelProperty(value = "地址")
+    @Schema(description = "地址")
     private String address;
 
-    @ApiModelProperty(value = "出生地址")
+    @Schema(description = "出生地址")
     private String birthPlace;
 
-    @ApiModelProperty(value = "出生时间 精确到小时 对应的时间戳")
+    @Schema(description = "出生时间 精确到小时 对应的时间戳")
     private long birthTime;
 
-    @ApiModelProperty(value = "关系状态")
+    @Schema(description = "关系状态")
     private int relationShipStatus;
 
 }

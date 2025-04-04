@@ -6,6 +6,7 @@ import com.nano.cat.web.data.user.UserUpdateRequest;
 import com.nano.cat.web.logic.UserProfileLogic;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,19 +27,19 @@ public class UserController {
     @Autowired
     private UserProfileLogic userProfileLogic;
 
-    @Operation(description = "注册")
+    @Operation(summary = "注册")
     @PostMapping("/register")
     public UserProfileVO register(@RequestBody UserRegisterRequest request) {
         return userProfileLogic.register(request);
     }
 
-    @ApiOperation(value = "获取用户信息")
+    @Operation(summary = "获取用户信息")
     @GetMapping("/detail")
-    public UserProfileVO getUserInfo(@RequestParam(value = "userId", defaultValue = "0") long userId) {
+    public UserProfileVO getUserInfo(@Parameter(name = "userId", description = "用户ID") @RequestParam(value = "userId", defaultValue = "0") long userId) {
         return userProfileLogic.getUserInfo(userId);
     }
 
-    @ApiOperation(value = "更新用户信息")
+    @Operation(summary = "更新用户信息")
     @PostMapping("/update")
     public UserProfileVO updateUserInfo(@RequestBody UserUpdateRequest request) {
         return userProfileLogic.update(request);

@@ -24,10 +24,6 @@ spring:
     date-format: yyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai
 
-  banner:
-    charset: UTF-8
-    location: classpath:banner.txt
-
   servlet:
     multipart:
       max-file-size: 50MB
@@ -269,14 +265,14 @@ knife4j:
     # 自定义底部
     enable-footer: false
     enable-footer-custom: true
-    footer-custom-content: MIT License | Copyright © 2019-2023 [geekidea](https://geekidea.io)
+    footer-custom-content: MIT License | Copyright © 2019-2023 [what-does-cat-do](https://www.elegantfish.online)
 
 openapi:
   title: WhatDoesCatDo
   description: what-does-cat-do后台接口文档
   contact-name: zp
-  contact-url: https://geekidea.io
-  contact-email: geekidea@qq.com
+  contact-url: https://www.elegantfish.online
+  contact-email: 1174520425@qq.com
   version: 1.0
   external-description: WhatDoesCatDo
 

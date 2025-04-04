@@ -8,6 +8,8 @@ package com.nano.cat.web.data.questionnaire;
 
 import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,10 +21,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class QuestionnaireDetailResponse {
 
-    @ApiModelProperty(value = "问卷列表")
+    @Schema(description = "问卷列表")
     private QuestionnaireMetaVO questionnaire;
 
-    @ApiModelProperty(value = "问题列表")
+    @Schema(description = "问题列表")
     private List<QuestionnaireQuestionVO> questions;
 
 }

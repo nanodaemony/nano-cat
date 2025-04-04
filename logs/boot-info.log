@@ -687,3 +687,1228 @@ Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndW
 Class: java.lang.Iterable, Method: forEach, Line: 75
 Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
 Class: java.lang.Thread, Method: run, Line: 834
+2025-04-04 13:29:58.803 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:29:58.806 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 20120 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:29:58.806 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:29:59.800 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:29:59.801 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 13:29:59.811 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 13:29:59.819 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:29:59.820 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 13:29:59.827 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 13:30:00.483 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 13:30:00.490 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:30:00.490 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 13:30:00.491 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 13:30:00.589 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 13:30:00.589 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1760 ms
+2025-04-04 13:30:01.880 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-04-04 13:30:02.238 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 13:30:02.408 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 13:30:02.529 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:30:02.549 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 13:30:02.550 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:151 [][] Context refreshed
+2025-04-04 13:30:02.571 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:154 [][] Found 1 custom documentation plugin(s)
+2025-04-04 13:30:02.575 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 13:30:02.590 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 13:30:02.596 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 13:30:02.596 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 13:30:02.716 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:30:02.716 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 13:30:02.717 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:30:02.725 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:30:02.729 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 13:30:02.739ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:40)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1441)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:868)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:133)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:130)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:829)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:52)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:52)
+	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1400)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:275)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:239)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:621)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:104)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 13:37:57.981 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:37:57.984 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 16908 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:37:57.985 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:37:58.584 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:37:58.585 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 13:37:58.592 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 13:37:58.599 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:37:58.600 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 13:37:58.608 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 13:37:59.208 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 13:37:59.214 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:37:59.215 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 13:37:59.215 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 13:37:59.312 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 13:37:59.313 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1304 ms
+2025-04-04 13:38:00.535 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 13:38:00.811 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 13:38:00.938 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:38:00.952 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 13:38:00.959 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.309 seconds (JVM running for 3.589)
+2025-04-04 13:38:03.146 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 13:38:03.146 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 13:38:03.146 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 0 ms
+2025-04-04 13:38:03.394 INFO [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 195 ms
+2025-04-04 13:43:00.538 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 13:43:00.540 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 13:43:00.540 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
+Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
+Class: java.lang.Iterable, Method: forEach, Line: 75
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
+Class: java.lang.Thread, Method: run, Line: 834
+2025-04-04 13:46:26.392 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:46:26.394 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 19524 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:46:26.394 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:46:27.083 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/nano/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]; nested exception is java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+2025-04-04 13:46:27.085 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 13:46:27.096ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/nano/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]; nested exception is java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:457)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:331)
+	at org.springframework.context.annotation.ConditionEvaluator.getCondition(ConditionEvaluator.java:124)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:96)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:512)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:495)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 29 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/common/ClassPresentInClassPathCondition
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:802)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:623)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:324)
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.common.ClassPresentInClassPathCondition
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 49 common frames omitted
+
+2025-04-04 13:52:56.613 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:52:56.616 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 7988 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:52:56.616 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:52:57.282 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:52:57.283 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 13:52:57.294 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2025-04-04 13:52:57.302 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:52:57.303 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 13:52:57.311 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 13:52:57.934 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 13:52:57.939 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:52:57.940 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 13:52:57.940 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 13:52:58.035 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 13:52:58.035 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1396 ms
+2025-04-04 13:52:58.996 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-04-04 13:52:59.422 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 13:52:59.703 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 13:52:59.839 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:52:59.853 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 13:52:59.853 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:160 [][] Context refreshed
+2025-04-04 13:52:59.861 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+2025-04-04 13:52:59.876 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 13:52:59.920 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 13:52:59.921 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 13:53:00.047 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:53:00.049 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 13:53:00.051 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:53:00.057 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:53:00.061 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 13:53:00.072ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.IllegalStateException: Multiple Dockets with the same group name are not supported. The following duplicate groups were discovered. default
+	at springfox.documentation.spring.web.plugins.DuplicateGroupsDetector.ensureNoDuplicateGroups(DuplicateGroupsDetector.java:45)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.documentationPlugins(DocumentationPluginsManager.java:97)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:162)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 13:53:59.415 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 13376 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:53:59.415 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:53:59.417 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:53:59.997 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:53:59.998 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 13:54:00.009 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2025-04-04 13:54:00.017 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:54:00.019 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 13:54:00.027 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 13:54:00.745 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 13:54:00.752 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:54:00.753 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 13:54:00.753 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 13:54:00.860 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 13:54:00.860 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1416 ms
+2025-04-04 13:54:01.740 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-04-04 13:54:02.135 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 13:54:02.711 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 13:54:02.833 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:54:02.849 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 13:54:02.849 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:160 [][] Context refreshed
+2025-04-04 13:54:02.860 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:163 [][] Found 1 custom documentation plugin(s)
+2025-04-04 13:54:02.861 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 13:54:02.872 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 13:54:02.914 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 13:54:02.915 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 13:54:03.049 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:54:03.049 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 13:54:03.052 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:54:03.055 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:54:03.060 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 13:54:03.068ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:40)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1441)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:868)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:829)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:52)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:52)
+	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1400)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:275)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:239)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:621)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 13:57:32.067 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 13:57:32.070 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 13808 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 13:57:32.071 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 13:57:32.707 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:57:32.708 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 13:57:32.718 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 13:57:32.727 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 13:57:32.728 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 13:57:32.737 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 13:57:33.415 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 13:57:33.422 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:57:33.423 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 13:57:33.423 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 13:57:33.522 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 13:57:33.522 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1423 ms
+2025-04-04 13:57:34.432 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-04-04 13:57:34.858 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 13:57:35.088 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 13:57:35.216 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:57:35.230 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 13:57:35.231 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:160 [][] Context refreshed
+2025-04-04 13:57:35.240 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:163 [][] Found 1 custom documentation plugin(s)
+2025-04-04 13:57:35.242 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 13:57:35.254 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 13:57:35.303 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 13:57:35.305 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 13:57:35.425 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:57:35.425 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 13:57:35.427 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:57:35.434 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 13:57:35.438 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 13:57:35.447ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1441)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:842)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:783)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1333)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:269)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:233)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 14:00:15.368 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:00:15.372 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 14196 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:00:15.373 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:00:16.092 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:00:16.093 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:00:16.102 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:00:16.109 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:00:16.110 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:00:16.117 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:00:16.857 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:00:16.865 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:16.866 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:00:16.866 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:00:16.966 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:00:16.967 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1567 ms
+2025-04-04 14:00:18.447 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:00:18.683 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:00:18.836 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:18.858 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:00:18.861 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 14:00:18.876 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:00:18.887 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:00:18.888 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 14:00:19.014 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:19.015 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 14:00:19.016 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:19.023 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:19.027 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 14:00:19.039ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56)
+	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89)
+	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1515)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1749)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 14:00:42.554 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:00:42.554 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 19384 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:00:42.556 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:00:43.136 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:00:43.137 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:00:43.145 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:00:43.152 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:00:43.153 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:00:43.160 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:00:43.804 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:00:43.810 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:43.811 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:00:43.811 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:00:43.900 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:00:43.900 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1319 ms
+2025-04-04 14:00:45.344 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:00:45.581 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:00:45.738 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:45.755 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:00:45.758 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 14:00:45.772 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:00:45.788 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:00:45.788 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 14:00:45.920 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:45.921 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 14:00:45.923 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:45.928 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:00:45.933 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 14:00:45.942ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56)
+	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89)
+	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1515)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1749)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 14:02:25.620 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:02:25.623 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 17612 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:02:25.624 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:02:26.211 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:02:26.211 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:02:26.218 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:02:26.226 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:02:26.227 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:02:26.233 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:02:26.872 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:02:26.878 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:02:26.878 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:02:26.878 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:02:26.966 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:02:26.967 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1318 ms
+2025-04-04 14:02:28.309 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:02:28.520 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:02:28.684 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:02:28.701 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:02:28.704 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2025-04-04 14:02:28.717 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:02:28.733 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:02:28.733 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 745
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 420
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 307
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1317
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1306
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 14:02:28.853 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:02:28.853 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 14:02:28.855 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:02:28.862 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:02:28.867 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 14:02:28.878ERROR [main] o.s.boot.SpringApplication              :835 [][] Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.nano.cat.CatApplication.main(CatApplication.java:11)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56)
+	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89)
+	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1515)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1749)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 14 common frames omitted
+
+2025-04-04 14:09:53.541 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.0.Final
+2025-04-04 14:09:53.543 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 21232 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:09:53.544 INFO [main] com.nano.cat.CatApplication             :667 [][] The following profiles are active: dev
+2025-04-04 14:09:54.271 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:09:54.271 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:09:54.279 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:09:54.286 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:09:54.287 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:09:54.294 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:09:54.973 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:09:54.981 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:09:54.981 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:09:54.981 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2025-04-04 14:09:55.067 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:09:55.067 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1501 ms
+2025-04-04 14:09:56.644 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:09:56.858 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:09:56.989 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:09:57.006 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:09:57.212 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 4.0 seconds (JVM running for 4.282)
+2025-04-04 14:09:57.213 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state LivenessState changed to CORRECT
+2025-04-04 14:09:57.215 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2025-04-04 14:10:02.106 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:10:02.106 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:10:02.107 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 0 ms
+2025-04-04 14:11:11.160 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.0.Final
+2025-04-04 14:11:11.163 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 17160 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:11:11.163 INFO [main] com.nano.cat.CatApplication             :667 [][] The following profiles are active: dev
+2025-04-04 14:11:11.792 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:11:11.792 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:11:11.803 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:11:11.810 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:11:11.811 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:11:11.819 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:11:12.491 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:11:12.498 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:12.498 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:11:12.498 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2025-04-04 14:11:12.573 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:11:12.573 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1385 ms
+2025-04-04 14:11:13.492 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-04-04 14:11:13.954 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:11:14.153 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:11:14.271 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:14.292 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:11:14.293 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:160 [][] Context refreshed
+2025-04-04 14:11:14.303 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:163 [][] Found 1 custom documentation plugin(s)
+2025-04-04 14:11:14.359 INFO [main] s.d.s.w.s.ApiListingReferenceScanner    :41 [][] Scanning for api listing references
+2025-04-04 14:11:14.372 WARN [main] ConfigServletWebServerApplicationContext:591 [][] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NoSuchMethodError: springfox.documentation.spi.service.contexts.RequestMappingContext.findAnnotation(Ljava/lang/Class;)Ljava/util/Optional;
+2025-04-04 14:11:14.387 INFO [main] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:11:14.442 INFO [main] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:11:14.442 INFO [main] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 184
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1152
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1145
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: refresh, Line: 596
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: refresh, Line: 145
+Class: org.springframework.boot.SpringApplication, Method: refresh, Line: 758
+Class: org.springframework.boot.SpringApplication, Method: refreshContext, Line: 438
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 337
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1336
+Class: org.springframework.boot.SpringApplication, Method: run, Line: 1325
+Class: com.nano.cat.CatApplication, Method: main, Line: 11
+2025-04-04 14:11:14.580 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Pausing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:14.580 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Stopping service [Tomcat]
+2025-04-04 14:11:14.581 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Stopping ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:14.589 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Destroying ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:14.595 INFO [main] ConditionEvaluationReportLoggingListener:136 [][] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-04 14:11:14.602ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter  :40 [][] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider.apply(OperationDynamicResponseModelProvider.java:47)
+
+The following method did not exist:
+
+    springfox.documentation.spi.service.contexts.RequestMappingContext.findAnnotation(Ljava/lang/Class;)Ljava/util/Optional;
+
+The method's class, springfox.documentation.spi.service.contexts.RequestMappingContext, is available from the following locations:
+
+    jar:file:/C:/Users/nano/.m2/repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar!/springfox/documentation/spi/service/contexts/RequestMappingContext.class
+
+The class hierarchy was loaded from the following locations:
+
+    springfox.documentation.spi.service.contexts.RequestMappingContext: file:/C:/Users/nano/.m2/repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of springfox.documentation.spi.service.contexts.RequestMappingContext
+
+2025-04-04 14:11:46.196 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.0.Final
+2025-04-04 14:11:46.200 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 15404 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:11:46.201 INFO [main] com.nano.cat.CatApplication             :667 [][] The following profiles are active: dev
+2025-04-04 14:11:46.858 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:11:46.858 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:11:46.866 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:11:46.873 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:11:46.874 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:11:46.881 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:11:47.588 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:11:47.594 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:47.594 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:11:47.595 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2025-04-04 14:11:47.676 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:11:47.677 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1454 ms
+2025-04-04 14:11:49.047 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:11:49.266 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:11:49.385 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:11:49.402 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:11:49.581 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.706 seconds (JVM running for 4.015)
+2025-04-04 14:11:49.582 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state LivenessState changed to CORRECT
+2025-04-04 14:11:49.583 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2025-04-04 14:11:54.095 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:11:54.095 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:11:54.095 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 0 ms
+2025-04-04 14:12:37.123 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.0.Final
+2025-04-04 14:12:37.125 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 10884 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:12:37.126 INFO [main] com.nano.cat.CatApplication             :667 [][] The following profiles are active: dev
+2025-04-04 14:12:37.733 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:12:37.733 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:12:37.742 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:12:37.749 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:12:37.751 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:12:37.759 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:12:38.487 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:12:38.493 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:12:38.493 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:12:38.495 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2025-04-04 14:12:38.578 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:12:38.578 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1427 ms
+2025-04-04 14:12:39.957 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:12:40.203 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:12:40.334 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:12:40.355 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:12:40.594 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.803 seconds (JVM running for 4.086)
+2025-04-04 14:12:40.595 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state LivenessState changed to CORRECT
+2025-04-04 14:12:40.596 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2025-04-04 14:12:44.759 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:12:44.759 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:12:44.760 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:19:44.503 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.0.Final
+2025-04-04 14:19:44.506 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 12956 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:19:44.507 INFO [main] com.nano.cat.CatApplication             :667 [][] The following profiles are active: dev
+2025-04-04 14:19:45.198 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:19:45.199 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:19:45.206 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:19:45.214 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-04-04 14:19:45.215 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:19:45.221 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:19:45.881 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:19:45.888 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:19:45.888 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:19:45.889 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2025-04-04 14:19:45.962 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:19:45.963 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1434 ms
+2025-04-04 14:19:47.643 INFO [main] pertySourcedRequestMappingHandlerMapping:69 [][] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2025-04-04 14:19:48.008 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:19:48.218 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:19:48.337 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:19:48.359 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:19:48.360 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:93 [][] Documentation plugins bootstrapped
+2025-04-04 14:19:48.364 INFO [main] d.s.w.p.DocumentationPluginsBootstrapper:79 [][] Found 1 custom documentation plugin(s)
+2025-04-04 14:19:48.399 INFO [main] s.d.s.w.s.ApiListingReferenceScanner    :44 [][] Scanning for api listing references
+2025-04-04 14:19:48.506 INFO [main] .d.s.w.r.o.CachingOperationNameGenerator:41 [][] Generating unique operation named: openapiJsonUsingGET_1
+2025-04-04 14:19:48.510 INFO [main] .d.s.w.r.o.CachingOperationNameGenerator:41 [][] Generating unique operation named: openapiYamlUsingGET_1
+2025-04-04 14:19:48.531 INFO [main] .d.s.w.r.o.CachingOperationNameGenerator:41 [][] Generating unique operation named: openapiJsonUsingGET_2
+2025-04-04 14:19:48.556 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 4.381 seconds (JVM running for 4.666)
+2025-04-04 14:19:48.557 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state LivenessState changed to CORRECT
+2025-04-04 14:19:48.558 INFO [main] o.s.b.a.ApplicationAvailabilityBean     :75 [][] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2025-04-04 14:19:51.005 INFO [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:19:51.005 INFO [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:19:51.006 INFO [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:19:51.154 INFO [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource :398 [][] Init duration for springdoc-openapi is: 88 ms
+2025-04-04 14:21:44.304 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 9084 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:21:44.304 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:21:44.306 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:21:44.914 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:21:44.915 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:21:44.923 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:21:44.928 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:21:44.930 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:21:44.937 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:21:45.553 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:21:45.559 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:21:45.559 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:21:45.560 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:21:45.654 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:21:45.654 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1323 ms
+2025-04-04 14:21:46.836 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:21:47.022 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:21:47.154 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:21:47.169 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:21:47.174 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.211 seconds (JVM running for 3.484)
+2025-04-04 14:21:49.632 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:21:49.632 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:21:49.633 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:21:49.873 INFO [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 188 ms
+2025-04-04 14:22:26.081 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:22:26.088 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:22:26.088 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
+Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
+Class: java.lang.Iterable, Method: forEach, Line: 75
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
+Class: java.lang.Thread, Method: run, Line: 834
+2025-04-04 14:22:29.388 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 13856 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:22:29.386 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:22:29.388 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:22:29.899 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:22:29.901 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:22:29.909 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:22:29.915 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:22:29.916 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:22:29.922 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:22:30.523 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:22:30.529 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:22:30.529 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:22:30.529 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:22:30.623 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:22:30.624 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1211 ms
+2025-04-04 14:22:31.822 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:22:32.028 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:22:32.158 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:22:32.175 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:22:32.180 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.117 seconds (JVM running for 3.392)
+2025-04-04 14:22:38.322 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:22:38.322 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:22:38.323 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:22:38.666 INFO [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 189 ms
+2025-04-04 14:24:36.956 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:24:36.958 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:24:36.958 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
+Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
+Class: java.lang.Iterable, Method: forEach, Line: 75
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
+Class: java.lang.Thread, Method: run, Line: 834
+2025-04-04 14:24:39.390 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:24:39.392 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 396 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:24:39.393 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:24:39.946 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:24:39.948 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:24:39.956 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:24:39.966 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:24:39.966 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:24:39.975 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:24:40.644 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:24:40.650 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:24:40.650 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:24:40.650 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:24:40.750 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:24:40.750 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1332 ms
+2025-04-04 14:24:41.993 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:24:42.204 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:24:42.346 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:24:42.365 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:24:42.371 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.317 seconds (JVM running for 3.602)
+2025-04-04 14:24:50.312 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:24:50.312 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:24:50.313 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:24:50.631 INFO [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 186 ms
+2025-04-04 14:25:00.883 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:25:00.890 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:25:00.890 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
+Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
+Class: java.lang.Iterable, Method: forEach, Line: 75
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
+Class: java.lang.Thread, Method: run, Line: 834
+2025-04-04 14:31:15.403 INFO [background-preinit] o.h.validator.internal.util.Version     :21 [][] HV000001: Hibernate Validator 6.2.5.Final
+2025-04-04 14:31:15.406 INFO [main] com.nano.cat.CatApplication             :55 [][] Starting CatApplication using Java 11.0.2 on nano with PID 1220 (E:\code\nano\nano-cat\cat-start\target\classes started by nano in E:\code\nano\nano-cat)
+2025-04-04 14:31:15.406 INFO [main] com.nano.cat.CatApplication             :651 [][] The following 1 profile is active: "dev"
+2025-04-04 14:31:16.088 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:31:16.089 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-04-04 14:31:16.097 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-04-04 14:31:16.104 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:262 [][] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04 14:31:16.105 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:132 [][] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04 14:31:16.112 INFO [main] .s.d.r.c.RepositoryConfigurationDelegate:201 [][] Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-04-04 14:31:16.696 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :108 [][] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 14:31:16.701 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:31:16.701 INFO [main] o.apache.catalina.core.StandardService  :173 [][] Starting service [Tomcat]
+2025-04-04 14:31:16.701 INFO [main] org.apache.catalina.core.StandardEngine :173 [][] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-04-04 14:31:16.798 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring embedded WebApplicationContext
+2025-04-04 14:31:16.799 INFO [main] w.s.c.ServletWebServerApplicationContext:290 [][] Root WebApplicationContext: initialization completed in 1370 ms
+2025-04-04 14:31:17.966 INFO [main] com.zaxxer.hikari.HikariDataSource      :110 [][] HikariPool-1 - Starting...
+2025-04-04 14:31:18.168 INFO [main] com.zaxxer.hikari.HikariDataSource      :123 [][] HikariPool-1 - Start completed.
+2025-04-04 14:31:18.297 INFO [main] o.a.coyote.http11.Http11NioProtocol     :173 [][] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-04 14:31:18.312 INFO [main] o.s.b.w.embedded.tomcat.TomcatWebServer :220 [][] Tomcat started on port(s): 8080 (http) with context path '/api'
+2025-04-04 14:31:18.318 INFO [main] com.nano.cat.CatApplication             :61 [][] Started CatApplication in 3.243 seconds (JVM running for 3.515)
+2025-04-04 14:31:20.305 INFO [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]   :173 [][] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 14:31:20.305 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :525 [][] Initializing Servlet 'dispatcherServlet'
+2025-04-04 14:31:20.306 INFO [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet       :547 [][] Completed initialization in 1 ms
+2025-04-04 14:31:20.569 INFO [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource :367 [][] Init duration for springdoc-openapi is: 209 ms
+2025-04-04 14:33:08.345 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :350 [][] HikariPool-1 - Shutdown initiated...
+2025-04-04 14:33:08.348 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource      :352 [][] HikariPool-1 - Shutdown completed.
+2025-04-04 14:33:08.348 INFO [SpringApplicationShutdownHook] c.qcloud.cos.http.DefaultCosHttpClient  :158 [][] shutdown stackTrace:
+Class: com.qcloud.cos.http.DefaultCosHttpClient, Method: shutdown, Line: 147
+Class: com.qcloud.cos.COSClient, Method: shutdown, Line: 183
+Class: com.nano.cat.service.impl.OssServiceImpl, Method: destroy, Line: 64
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke0, Line: -2
+Class: jdk.internal.reflect.NativeMethodAccessorImpl, Method: invoke, Line: 62
+Class: jdk.internal.reflect.DelegatingMethodAccessorImpl, Method: invoke, Line: 43
+Class: java.lang.reflect.Method, Method: invoke, Line: 566
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement, Method: invoke, Line: 389
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata, Method: invokeDestroyMethods, Line: 347
+Class: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor, Method: postProcessBeforeDestruction, Line: 177
+Class: org.springframework.beans.factory.support.DisposableBeanAdapter, Method: destroy, Line: 197
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroyBean, Line: 587
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingleton, Line: 559
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingleton, Line: 1163
+Class: org.springframework.beans.factory.support.DefaultSingletonBeanRegistry, Method: destroySingletons, Line: 520
+Class: org.springframework.beans.factory.support.DefaultListableBeanFactory, Method: destroySingletons, Line: 1156
+Class: org.springframework.context.support.AbstractApplicationContext, Method: destroyBeans, Line: 1106
+Class: org.springframework.context.support.AbstractApplicationContext, Method: doClose, Line: 1075
+Class: org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext, Method: doClose, Line: 172
+Class: org.springframework.context.support.AbstractApplicationContext, Method: close, Line: 1021
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: closeAndWait, Line: 145
+Class: java.lang.Iterable, Method: forEach, Line: 75
+Class: org.springframework.boot.SpringApplicationShutdownHook, Method: run, Line: 114
+Class: java.lang.Thread, Method: run, Line: 834

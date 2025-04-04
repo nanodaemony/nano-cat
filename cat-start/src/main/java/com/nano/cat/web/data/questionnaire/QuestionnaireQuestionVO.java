@@ -7,6 +7,7 @@ package com.nano.cat.web.data.questionnaire;
  */
 
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,22 +21,22 @@ import java.util.List;
 @NoArgsConstructor
 public class QuestionnaireQuestionVO {
 
-    @ApiModelProperty(value = "题目ID")
+    @Schema(description = "题目ID")
     private long id;
 
-    @ApiModelProperty(value = "问题内容")
+    @Schema(description = "问题内容")
     private String content;
 
-    @ApiModelProperty(value = "问题类型 1-单选题 2-多选题 3-填空题")
+    @Schema(description = "问题类型 1-单选题 2-多选题 3-填空题")
     private int type;
 
-    @ApiModelProperty(value = "选项")
+    @Schema(description = "选项")
     private List<String> options;
 
-    @ApiModelProperty(value = "是否必填")
+    @Schema(description = "是否必填")
     private int required;
 
-    @ApiModelProperty(value = "问题序号")
+    @Schema(description = "问题序号")
     private int ordinal;
 
 }
