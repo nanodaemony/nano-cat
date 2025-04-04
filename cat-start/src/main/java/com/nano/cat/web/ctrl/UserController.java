@@ -9,11 +9,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author chenzeng
@@ -21,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2025/3/17 19:56
  */
 @Tag(name = "用户接口")
-@RestController("/cat-user")
+@RestController()
+@RequestMapping("/cat-user")
 public class UserController {
 
     @Autowired
