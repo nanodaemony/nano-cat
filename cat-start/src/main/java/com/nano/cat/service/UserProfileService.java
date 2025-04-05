@@ -14,6 +14,8 @@ public interface UserProfileService {
 
     UserProfile getByUserId(long userId);
 
+    UserProfile getByEmail(String email);
+
     long register(UserProfile userProfile);
 
     int update(UserProfile userProfile);

@@ -10,8 +10,11 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.nano.cat.framework.data.UserRoleEnum;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,6 +29,15 @@ public class UserProfile {
     @TableId(type = IdType.AUTO)
     private Long id;
 
+    // 邮箱
+    private String email;
+
+    // 密码
+    private String password;
+
+    @TableField(value = "userRoles")
+    private List<Integer> userRoles;
+
     @TableField("appleId")
     private String appleId;
 
@@ -36,8 +48,6 @@ public class UserProfile {
     private String nickname;
 
     private String avatar;
-
-    private String email;
 
     private Integer gender;
 

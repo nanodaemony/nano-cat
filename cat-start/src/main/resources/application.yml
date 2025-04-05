@@ -103,6 +103,12 @@ pagehelper:
 # 取值0～63
 workerId: 0
 
+security:
+  jwt:
+    token:
+      secret-key: secret-key
+      expire-length: 300000 # 5 minutes duration by default: 5 minutes * 60 seconds * 1000 miliseconds
+
 # 框架公共配置
 boot:
   # 排除路径

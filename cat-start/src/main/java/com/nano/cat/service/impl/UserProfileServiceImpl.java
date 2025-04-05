@@ -1,7 +1,6 @@
 package com.nano.cat.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.mapper.UserProfileMapper;
 import com.nano.cat.service.UserProfileService;
@@ -46,8 +45,18 @@ public class UserProfileServiceImpl implements UserProfileService {
     }
 
     @Override
+    public UserProfile getByEmail(String email) {
+        if (StringUtils.isBlank(email)) {
+            throw new IllegalArgumentException("Invalid request.");
+        }
+        QueryWrapper<UserProfile> wrapper = new QueryWrapper<>();
+        wrapper.eq("email", email);
+        return userProfileMapper.selectOne(wrapper);
+    }
+
+    @Override
     public long register(UserProfile userProfile) {
-        if (Objects.isNull(userProfile) || StringUtils.isBlank(userProfile.getAppleId())) {
+        if (Objects.isNull(userProfile)) {
             throw new IllegalArgumentException("Invalid request.");
         }
         int id = userProfileMapper.insert(userProfile);

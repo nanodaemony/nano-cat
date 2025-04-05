@@ -3,12 +3,15 @@ CREATE TABLE `user_profile`
 (
     `id`           BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '用户ID',
 
+    `email`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '邮箱',
+    `password`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '登录密码',
+    `userRoles`       VARCHAR(64) NOT NULL DEFAULT '[1]'     COMMENT '用户角色',
+
     `appleId`         VARCHAR(256) NOT NULL DEFAULT ''     COMMENT '苹果ID',
     `username`         VARCHAR(256) NOT NULL DEFAULT ''     COMMENT '用户名称(苹果的名称, 固定值)',
-    `email`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '邮箱',
 
-    `nickname`         VARCHAR(64) NOT NULL DEFAULT ''     COMMENT '昵称',
     `phone`         VARCHAR(64) NOT NULL DEFAULT ''     COMMENT '电话',
+    `nickname`         VARCHAR(64) NOT NULL DEFAULT ''     COMMENT '昵称',
     `avatar`       VARCHAR(512) NOT NULL DEFAULT ''     COMMENT '头像URL',
     `gender`       INT(11) NOT NULL DEFAULT '0'     COMMENT '性别 0-未知 1-男 2-女',
     `birthTime`       BIGINT(20) NOT NULL DEFAULT '0'     COMMENT '出生时间(可以精确到毫秒)',
@@ -20,7 +23,7 @@ CREATE TABLE `user_profile`
     `dbctime`      DATETIME(3) DEFAULT CURRENT_TIMESTAMP (3) COMMENT '创建时间',
     `dbutime`      DATETIME(3) DEFAULT CURRENT_TIMESTAMP (3) ON UPDATE CURRENT_TIMESTAMP (3) COMMENT '更新时间',
     PRIMARY KEY    (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户信息表';
 
 # 用户权益表
 CREATE TABLE `user_right` (
