@@ -33,8 +33,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         // Entry points
         http.authorizeRequests()
-                .antMatchers("/user/register").permitAll()
-                .antMatchers("/user/login").permitAll()
+                // 放行登录相关接口
+                .antMatchers("/user/register/pass").permitAll()
+                .antMatchers("/user/login/pass").permitAll()
+                .antMatchers("/user/login/verify-code/gen").permitAll()
+                .antMatchers("/user/login/verify-code").permitAll()
+                .antMatchers("/user//logout").permitAll()
                 .antMatchers("/api/v3/api-docs/swagger-config").permitAll()
                 .antMatchers("/webjars/**").permitAll()
                 .antMatchers("/js/**").permitAll()

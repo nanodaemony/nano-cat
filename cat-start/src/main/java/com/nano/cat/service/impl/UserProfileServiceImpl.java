@@ -1,5 +1,6 @@
 package com.nano.cat.service.impl;
 
+import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.mapper.UserProfileMapper;
@@ -59,9 +60,10 @@ public class UserProfileServiceImpl implements UserProfileService {
         if (Objects.isNull(userProfile)) {
             throw new IllegalArgumentException("Invalid request.");
         }
-        int id = userProfileMapper.insert(userProfile);
-        log.info("用户注册成功, id: {}", id);
-        return id;
+        log.info("注册用户: {}", JSONUtil.toJsonStr(userProfile));
+        userProfileMapper.insert(userProfile);
+        log.info("用户注册成功, id: {}", userProfile.getId());
+        return userProfile.getId();
     }
 
     @Override

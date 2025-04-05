@@ -1,7 +1,12 @@
 package com.nano.cat.framework.filter;
 
+import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.framework.exception.CustomException;
 import com.nano.cat.framework.security.JwtTokenProvider;
+import com.nano.cat.service.UserProfileService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -27,7 +32,13 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         try {
             // 验证JWT令牌
             if (token != null && jwtTokenProvider.validateToken(token)) {
-                Authentication auth = jwtTokenProvider.getAuthentication(token);
+                String userId = jwtTokenProvider.getUserIdStrFromToken(token);
+                Authentication auth = new UsernamePasswordAuthenticationToken(
+                        userId,
+                        null,
+                        jwtTokenProvider.getAuthoritiesFromToken(token)
+                );
+
                 SecurityContextHolder.getContext().setAuthentication(auth);
             }
         } catch (CustomException ex) {

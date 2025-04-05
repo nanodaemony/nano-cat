@@ -2,7 +2,9 @@ package com.nano.cat.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.nano.cat.data.po.UserProfile;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 
 /**
  * @author chenzeng
@@ -11,5 +13,9 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserProfileMapper extends BaseMapper<UserProfile> {
+
+    @Override
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
+    int insert(UserProfile entity);
 
 }

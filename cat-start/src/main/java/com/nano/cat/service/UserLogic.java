@@ -1,12 +1,13 @@
 package com.nano.cat.service;
 
+import cn.hutool.core.lang.UUID;
 import com.alibaba.excel.util.StringUtils;
 import com.google.common.collect.Lists;
 import com.nano.cat.data.po.UserProfile;
 import com.nano.cat.framework.data.UserRoleEnum;
 import com.nano.cat.framework.exception.CustomException;
 import com.nano.cat.framework.security.JwtTokenProvider;
-import com.nano.cat.web.data.user.EmailUserRegisterRequest;
+import com.nano.cat.web.data.user.PasswordUserRegisterRequest;
 import com.nano.cat.web.data.user.UserProfileVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -39,7 +40,10 @@ public class UserLogic {
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    public String register(EmailUserRegisterRequest request, HttpServletResponse response) {
+    @Autowired
+    private VerificationCodeService verificationCodeService;
+
+    public String registerWithPassword(PasswordUserRegisterRequest request, HttpServletResponse response) {
         verifyRequest(request);
 
         // 检查用户名是否已存在
@@ -59,6 +63,13 @@ public class UserLogic {
         // 生成Token
         String token = jwtTokenProvider.createToken(userId, Lists.newArrayList(UserRoleEnum.ROLE_CLIENT));
 
+        // 将Token存入Cookie
+        addJwtCookie(response, token);
+
+        return token;
+    }
+
+    private void addJwtCookie(HttpServletResponse response, String token) {
         // 将JWT种入Cookie
         ResponseCookie cookie = ResponseCookie.from(JWT_COOKIE_NAME, token) // Cookie 名称和值
                 .httpOnly(true)      // 防止 XSS 攻击（JavaScript 无法读取）
@@ -69,17 +80,16 @@ public class UserLogic {
                 .build();
 
         response.addHeader("Set-Cookie", cookie.toString());
-        return token;
     }
 
-    private UserProfile buildUserProfile(EmailUserRegisterRequest request) {
+    private UserProfile buildUserProfile(PasswordUserRegisterRequest request) {
         UserProfile userProfile = new UserProfile();
         userProfile.setEmail(request.getEmail());
         userProfile.setPassword(request.getPassword());
         return userProfile;
     }
 
-    private void verifyRequest(EmailUserRegisterRequest request) {
+    private void verifyRequest(PasswordUserRegisterRequest request) {
         boolean invalid = Objects.isNull(request)
                 || StringUtils.isBlank(request.getEmail())
                 || StringUtils.isBlank(request.getPassword());
@@ -95,7 +105,7 @@ public class UserLogic {
      * @param password 密码
      * @return JWT Token
      */
-    public String login(String email, String password) {
+    public String loginWithPassword(String email, String password) {
         try {
             // 获取用户信息
             UserProfile userProfile = userProfileService.getByEmail(email);
@@ -110,6 +120,59 @@ public class UserLogic {
             return jwtTokenProvider.createToken(userProfile.getId(), Lists.newArrayList(UserRoleEnum.ROLE_CLIENT));
         } catch (AuthenticationException e) {
             throw new CustomException("Invalid username/password supplied", HttpStatus.UNPROCESSABLE_ENTITY);
+        }
+    }
+
+    /**
+     * 生成注册验证码
+     */
+    public String genRegisterVerifyCode(String email) {
+        if (StringUtils.isBlank(email)) {
+            throw new CustomException("Email cannot be empty", HttpStatus.BAD_REQUEST);
+        }
+
+        // TODO: 一分钟内不需要再次发送
+
+        // 生成并发送验证码
+        verificationCodeService.generateAndSendCode(email);
+
+        return "Verification code sent.";
+    }
+
+    /**
+     * 验证码方式登录/注册
+     */
+    public String loginWithVerifyCode(String email, String verifyCode, HttpServletResponse response) {
+        try {
+            // 验证验证码
+            if (!verificationCodeService.verifyCode(email, verifyCode)) {
+                throw new CustomException("Invalid verification code", HttpStatus.UNAUTHORIZED);
+            }
+
+            // 获取用户信息
+            UserProfile userProfile = userProfileService.getByEmail(email);
+
+            // 如果用户不存在, 则自动注册
+            if (Objects.isNull(userProfile)) {
+                userProfile = new UserProfile();
+                userProfile.setEmail(email);
+                // 设置一个随机密码(用户无法用密码登录)
+                userProfile.setPassword(passwordEncoder.encode(UUID.randomUUID().toString()));
+                long userId = userProfileService.register(userProfile);
+                if (userId <= 0) {
+                    throw new CustomException("Failed to register user", HttpStatus.INTERNAL_SERVER_ERROR);
+                }
+                userProfile = userProfileService.getByUserId(userId);
+            }
+
+            // 生成JWT并返回
+            String token = jwtTokenProvider.createToken(userProfile.getId(), Lists.newArrayList(UserRoleEnum.ROLE_CLIENT));
+            // 将Token存入Cookie
+            addJwtCookie(response, token);
+
+            return token;
+        } catch (AuthenticationException e) {
+            throw new CustomException("Invalid email/verification code", HttpStatus.UNPROCESSABLE_ENTITY);
         }
     }
 
@@ -142,4 +205,25 @@ public class UserLogic {
         return jwtTokenProvider.createToken(username, Lists.newArrayList(UserRoleEnum.ROLE_CLIENT));
     }
 
+    public void logout(HttpServletRequest request, HttpServletResponse response) {
+        // 1. 清除Cookie
+        clearJwtCookie(response);
+
+        // 2. (可选)使当前JWT失效(需要黑名单机制)
+        String token = jwtTokenProvider.resolveToken(request);
+        if (token != null) {
+            jwtTokenProvider.invalidateToken(token);
+        }
+    }
+
+    private void clearJwtCookie(HttpServletResponse response) {
+        ResponseCookie cookie = ResponseCookie.from(JWT_COOKIE_NAME, "")
+                .httpOnly(true)
+                .secure(true)
+                .path("/")
+                .maxAge(0) // 立即过期
+                .sameSite("Lax")
+                .build();
+        response.addHeader("Set-Cookie", cookie.toString());
+    }
 }

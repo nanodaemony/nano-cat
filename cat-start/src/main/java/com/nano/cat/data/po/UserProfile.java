@@ -35,9 +35,6 @@ public class UserProfile {
     // 密码
     private String password;
 
-    @TableField(value = "userRoles")
-    private List<Integer> userRoles;
-
     @TableField("appleId")
     private String appleId;
 

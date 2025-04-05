@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmailUserRegisterRequest {
+public class PasswordUserRegisterRequest {
 
     @Schema(description = "邮箱")
     private String email;

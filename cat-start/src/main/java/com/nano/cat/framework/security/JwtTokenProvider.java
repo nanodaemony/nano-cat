@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -18,9 +19,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Base64;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.nano.cat.framework.constants.SecurityConstants.JWT_COOKIE_NAME;
@@ -95,6 +94,20 @@ public class JwtTokenProvider {
         return Long.parseLong(Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody().getSubject());
     }
 
+    // 新增从token中获取权限的方法
+    public Collection<? extends GrantedAuthority> getAuthoritiesFromToken(String token) {
+        Claims claims = Jwts.parser()
+                .setSigningKey(secretKey)
+                .parseClaimsJws(token)
+                .getBody();
+
+        List<Map<String, String>> authList = (List<Map<String, String>>) claims.get("auth");
+
+        return authList.stream()
+                .map(auth -> new SimpleGrantedAuthority(auth.get("authority")))
+                .collect(Collectors.toList());
+    }
+
     public String resolveToken(HttpServletRequest req) {
         // 从请求头Authorization中获取Token
         String bearerToken = req.getHeader("Authorization");
@@ -124,4 +137,7 @@ public class JwtTokenProvider {
         }
     }
 
+    public void invalidateToken(String token) {
+        // TODO: 实现JWT失效逻辑 将token存入Redis黑名单, 同时校验的时候也从Redis拉取下来校验一下
+    }
 }
